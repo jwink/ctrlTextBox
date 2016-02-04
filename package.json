@@ -1,0 +1,19 @@
+{
+  "name": "ctrlTextBox",
+  "description": "Text box for React",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwink/ctrlTextBox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jwink/ctrlTextBox/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"    
+  }
+}
+
