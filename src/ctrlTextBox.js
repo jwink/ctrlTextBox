@@ -1,0 +1,25 @@
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+var CtrlTextBox = React.createClass({
+  render: function() {
+    if (this.props.metaObj.type == null) {
+      var inputType = "text";
+    } else {
+      var inputType = this.props.metaObj.type;
+    }
+    return (
+      <input type={inputType}
+             className={this.props.metaObj.eleClass}
+             placeholder={this.props.metaObj.placeholder}
+             onChange={this.props.handleChange}
+             onKeyPress={this.props.handleKeyPress}
+             defaultValue = {this.props.defaultValue}
+             name={this.props.metaObj.name} />
+    );
+  }
+});
+
+module.exports = CtrlTextBox;
+
