@@ -12,7 +12,7 @@ var CtrlTextBox = React.createClass({
     return (
       <div>
         <div className="row make-blue">
-          {this.props.ctrlLabel}
+          {this.props.metaObj.ctrlLabel}
         </div>
         <div className="row">
           <input type={inputType}
