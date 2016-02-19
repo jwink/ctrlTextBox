@@ -10,13 +10,20 @@ var CtrlTextBox = React.createClass({
       var inputType = this.props.metaObj.type;
     }
     return (
-      <input type={inputType}
-             className={this.props.metaObj.eleClass}
-             placeholder={this.props.metaObj.placeholder}
-             onChange={this.props.handleChange}
-             onKeyPress={this.props.handleKeyPress}
-             defaultValue = {this.props.defaultValue}
-             name={this.props.metaObj.name} />
+      <div>
+        <div className="row">
+          Hello, World
+        </div>
+        <div className="row">
+          <input type={inputType}
+                 className={this.props.metaObj.eleClass}
+                 placeholder={this.props.metaObj.placeholder}
+                 onChange={this.props.handleChange}
+                 onKeyPress={this.props.handleKeyPress}
+                 defaultValue = {this.props.defaultValue}
+                 name={this.props.metaObj.name} />
+        </div>         
+      </div>       
     );
   }
 });
