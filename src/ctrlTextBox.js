@@ -11,7 +11,7 @@ var CtrlTextBox = React.createClass({
     }
     return (
       <div>
-        <div className="row make-blue">
+        <div className={this.props.metaObj.ctrlLabelClasses}>
           {this.props.metaObj.ctrlLabel}
         </div>
         <div className="row">
