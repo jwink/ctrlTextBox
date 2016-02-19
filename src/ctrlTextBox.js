@@ -11,8 +11,8 @@ var CtrlTextBox = React.createClass({
     }
     return (
       <div>
-        <div className="row">
-          Hello, World
+        <div className="row make-blue">
+          {this.props.ctrlLabel}
         </div>
         <div className="row">
           <input type={inputType}
